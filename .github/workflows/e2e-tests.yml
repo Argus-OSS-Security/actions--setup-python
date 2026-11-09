@@ -1,16 +1,17 @@
 name: e2e tests
 
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths-ignore:
+#       - '**.md'
+#   pull_request:
+#     paths-ignore:
+#       - '**.md'
+#   workflow_dispatch:
+# 
 jobs:
   test-setup-python:
     name: Test setup-python

@@ -1,18 +1,19 @@
 name: Validate Python e2e freethread
 
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
-  schedule:
-    - cron: 30 3 * * *
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths-ignore:
+#       - '**.md'
+#   pull_request:
+#     paths-ignore:
+#       - '**.md'
+#   schedule:
+#     - cron: 30 3 * * *
+#   workflow_dispatch:
+# 
 jobs:
   setup-versions-from-manifest:
     name: Setup ${{ matrix.python }} ${{ matrix.os }}

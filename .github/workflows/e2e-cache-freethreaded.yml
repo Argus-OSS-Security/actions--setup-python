@@ -1,17 +1,18 @@
 name: e2e-cache freethread
 
-on:
-  pull_request:
-    paths-ignore:
-      - '**.md'
-  push:
-    branches:
-      - main
-      - releases/*
-    paths-ignore:
-      - '**.md'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths-ignore:
+#       - '**.md'
+#   push:
+#     branches:
+#       - main
+#       - releases/*
+#     paths-ignore:
+#       - '**.md'
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 jobs:
